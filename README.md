@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/dotgibson/.github/main/profile/logo.png" alt="dotgibson" width="150" height="150" />
+<img src="https://raw.githubusercontent.com/dotgibson/.github/main/profile/logo.png" alt="dotgibson logo — the ~/. ring mark" width="150" height="150" />
 
 # `dotgibson`
 
