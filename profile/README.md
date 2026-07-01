@@ -7,7 +7,7 @@
 **One Core. Every machine. Zero drift.**
 
 A cross-platform dotfiles system that is authored **once** and fans out to every
-OS you touch — Mac, Windows, and seven Linux distros — plus a red-team and a
+OS you touch — Mac, Windows, and five Linux distros — plus a red-team and a
 blue-team layer that stay in lock-step. Fix a thing in one place; it lands
 everywhere.
 
@@ -92,6 +92,10 @@ into Kali's offensive companion as its own subtree.
                   dotfiles-Kali      dotfiles-Defense
                    (offense) ◀──── htpx ────▶ (defense)
 ```
+
+> **Windows is a host too** — but it replicates Core natively in PowerShell
+> rather than vendoring the `git subtree` (it mirrors only `nvim` and
+> `starship`), so by design it sits outside this Core fan-out.
 
 Core is authored once and synced out. OS repos add only what changes with the
 platform. Role repos add only what changes with the operator. Edit upstream,
