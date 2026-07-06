@@ -15,8 +15,7 @@ everywhere.
 
 <br>
 
-[![showcase](https://img.shields.io/badge/showcase-live-7aa2f7?style=for-the-badge&logo=astro&logoColor=white)](https://dotgibson.github.io/dotfiles-web/)
-[![core](https://img.shields.io/badge/source_of_truth-dotfiles--core-bb9af7?style=for-the-badge&logo=git&logoColor=white)](https://github.com/dotgibson/dotfiles-core)
+[![core](https://img.shields.io/github/v/release/dotgibson/dotfiles-core?style=for-the-badge&label=dotfiles-core&labelColor=1a1b26&color=bb9af7&logo=git&logoColor=white)](https://github.com/dotgibson/dotfiles-core/releases/latest)
 [![shell](https://img.shields.io/badge/zsh_·_nvim_·_tmux_·_starship-1a1b26?style=for-the-badge&logo=gnubash&logoColor=7aa2f7)](https://github.com/dotgibson/dotfiles-core)
 
 ![platforms](https://img.shields.io/badge/macOS-000000?style=flat-square&logo=apple&logoColor=white)
