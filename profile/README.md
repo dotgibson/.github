@@ -126,6 +126,8 @@ platform. Role repos add only what changes with the operator. Edit upstream,
 
 **New to the system?** → **[the getting-started site »](https://dotgibson.github.io/dotfiles-web/)**
 
+**Browse the docs?** → **[the documentation hub »](https://dotgibson.github.io/dotfiles-web/docs)**
+
 **Want the rules?** → **[dotfiles-core README + CONTRIBUTING »](https://github.com/dotgibson/dotfiles-core)**
 
 <br>
