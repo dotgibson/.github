@@ -1,0 +1,31 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "description": "Shared Renovate policy for the dotfiles fleet. Extend it from any repo with `local>dotgibson/.github`.",
+  "extends": [
+    "config:recommended",
+    "helpers:pinGitHubActionDigests",
+    "docker:pinDigests"
+  ],
+  "labels": ["dependencies"],
+  "timezone": "Etc/UTC",
+  "schedule": ["after 3am and before 7am on tuesday"],
+  "semanticCommits": "enabled",
+  "configMigration": true,
+  "prConcurrentLimit": 5,
+  "prHourlyLimit": 2,
+  "packageRules": [
+    {
+      "description": "The fleet's own reusable workflows ride a moving @v3 major tag advanced by the release process (RELEASE-STRATEGY.md) — Renovate must never pin or bump them.",
+      "matchManagers": ["github-actions"],
+      "matchDepNames": ["dotgibson/**"],
+      "enabled": false
+    },
+    {
+      "description": "Group all third-party GitHub Actions bumps into one weekly PR, committed as `ci(deps):` to match the fleet's convention (replaces the per-repo Dependabot github-actions ecosystem).",
+      "matchManagers": ["github-actions"],
+      "groupName": "github-actions",
+      "semanticCommitType": "ci",
+      "semanticCommitScope": "deps"
+    }
+  ]
+}
