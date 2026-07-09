@@ -11,6 +11,18 @@
   "schedule": ["after 3am and before 7am on tuesday"],
   "semanticCommits": "enabled",
   "configMigration": true,
+  "ignorePaths": [
+    "**/node_modules/**",
+    "**/bower_components/**",
+    "**/vendor/**",
+    "**/examples/**",
+    "**/__tests__/**",
+    "**/test/**",
+    "**/tests/**",
+    "**/__fixtures__/**",
+    "core/**",
+    "offensive/companion/**"
+  ],
   "prConcurrentLimit": 5,
   "prHourlyLimit": 2,
   "packageRules": [
