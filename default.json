@@ -26,6 +26,11 @@
       "groupName": "github-actions",
       "semanticCommitType": "ci",
       "semanticCommitScope": "deps"
+    },
+    {
+      "description": "The mise-managed language runtimes (python/java/lua in core/mise/config.toml) are deliberate pins coupled to the audit toolchain (luacheck, etc.). Bump them by hand in dotfiles-core so the change goes through `make audit`, not a Renovate dashboard checkbox — and so a major runtime jump (java 25, lua 5.5, python 3.14) can't fan out to every vendoring repo unreviewed. Disable the manager entirely.",
+      "matchManagers": ["mise"],
+      "enabled": false
     }
   ]
 }
